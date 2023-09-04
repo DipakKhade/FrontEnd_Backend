@@ -1,0 +1,2 @@
+This is a txt file and i wnat to read it using the javascript
+buit in module named as fs

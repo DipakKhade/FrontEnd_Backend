@@ -1,0 +1,35 @@
+
+
+
+ul{
+    display: flex;
+   
+}
+li{
+    list-style:none;
+    padding: 23px;
+    margin: 23px;
+    
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    border: 2px solid black;
+    
+
+}
+
+
+input{
+    display: flex;
+    margin: 23px;
+    padding: 8px;
+}
+
+.btn{
+    cursor: pointer;
+}

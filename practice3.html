@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practing html and css</title>
+
+    <style>
+        * {
+            
+           
+            
+
+
+            
+        }
+
+        .navbar {
+
+
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 650px;
+
+            border-radius: 3px;
+            padding: 10px;
+        }
+
+        .navbar div {
+            display: inline-block;
+            margin: 12px 12px;
+            margin: 12px 12px;
+            padding: 50px;
+            background-color: black;
+            color: white;
+
+
+        }
+
+        .navbar:hover {
+            cursor: pointer;
+
+
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            size: 50px;
+            position: fixed;
+            z-index: 100;
+
+        }
+
+        .btn {
+            position: absolute;
+            top: 90px;
+            right: 100px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: red;
+        }
+
+        .container h1 {
+            position: absolute;
+            top: 40%;
+            display: inline-block;
+            margin-left: 7%;
+            font-size: 6.25rem;
+            z-index: 80;
+
+        }
+
+        .container p {
+            position: absolute;
+            top: 60%;
+            z-index: 70;
+            background-image: url(dkhade.gif);
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav1">Home</div>
+        <div class="nav2">stdio</div>
+        <div class="nav3">about</div>
+
+
+    </nav>
+    <div class="logo"><img
+            src="data:image/png;base64,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"
+            alt="error"></div>
+
+    <div class="btn"><button>more</button></div>
+
+    <!-- this is container -->
+    <div class="container">
+        <h1><strong>QUALITY TECH VIDEOS</strong></h1>
+        
+    </div>
+</body>
+
+</html>

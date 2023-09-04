@@ -1,0 +1,14 @@
+{
+  "name": "tute-86",
+  "version": "1.0.0",
+  "description": "This is a tutorial related to mongoose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diapk",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^7.4.0"
+  }
+}

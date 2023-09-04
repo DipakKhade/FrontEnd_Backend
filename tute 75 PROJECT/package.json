@@ -1,0 +1,16 @@
+{
+  "name": "tute-75-project",
+  "version": "1.0.0",
+  "description": "This is a page of blogs related to coading",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dipak",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "html": "^1.0.0",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+
+        }
+        .container{
+            background-color: pink;
+            height: 40vh;
+            width: 100vh;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid green;
+
+        }
+        .box{
+            background-color: orange;
+            border: 1px solid red;
+            height: 200px;
+            width: 200px;
+            align-items: center;
+            justify-content: center;
+            transition: all 2s ease-in-out;
+        }
+        .box:hover{
+            size: 50%;
+            color: greenyellow;
+            transform: translate(100px 12px);
+            transform: scale(2);
+            /* transform: skew(30deg); */
+            transform-origin: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>These are Transition</h3>
+    <div class="container">
+
+        <div class="box">
+            This is a box
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptates ipsa quis neque, molestiae, tenetur ratione hic at, temporibus atque nobis. At, ad deleniti quasi enim eveniet ratione quos <est class="50"></est></p>
+        </div>
+    </div>
+
+    
+</body>
+</html>

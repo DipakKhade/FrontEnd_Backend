@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media quries in CSS Grid</title>
+
+    <style>
+      .container {
+        display: grid;
+        grid-gap: 22px;
+        grid-template-areas:
+          "navbar navbar navbar navbar"
+          "section section aside aside"
+          "footer footer footer footer";
+      }
+      .items {
+        border: 3px solid black;
+        background-color: orange;
+        padding: 23px;
+      }
+      #navbar {
+        grid-area: navbar;
+        margin: 23px;
+      }
+      #section {
+        grid-area: section;
+      }
+      #footer {
+        grid-area: footer;
+      }
+      .navitem {
+        display: inline-block;
+        margin: 12px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+          background-color: green;
+        }
+      }
+      @media (max-width: 800px) {
+        #footer {
+          background-color: orchid;
+          text-align: center;
+          justify-content: center;
+        }
+      }
+      @media (max-width: 900px) {
+        #navbar {
+          background-color: aqua;
+
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="navbar" class="items">
+        <div class="navitem">Home</div>
+        <div class="navitem">About us</div>
+        <div class="navitem">contact us</div>
+        <div class="navitem">More</div>
+      </div>
+      <div id="section" class="items">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quam ad
+        quia obcaecati. Sapiente nulla aut repellendus, autem vero hic delectus,
+        suscipit rem, ratione neque optio quaerat est. Nisi, dolore. Lorem ipsum
+        dolor situptas temporibus expedita aliquam mollitia quae tenetur
+        molestias numquam explicabo, ad, quidem repudiandae praesentium quas
+        doloremque maiores beatae? Cupiditate sint ut minima maxime voluptate
+        numquam architecto vel dolor ducimus, similique exercitationem
+        necessitatibus excepturi voluptatibus incidunt sequi quis fugit fuga
+        nemo soluta! Esse temporibus magnam libero dolores a, s similique nam in
+        nisi atque sapiente quaerat ipsa rerum amet eos iure?
+      </div>
+      <div id="aside" class="items">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        harum voluptatum delectus vitae nulla? Eaque repellat veritatis
+        dignissimos quae consequatur laborum itaque, distinctio atque recusandae
+        ea beatae, reruoloremque. Minus accusantium at eius sequi expedita,
+        repreheesciunt doloremque quos quam animi laborum sed, eligendi
+        similique quae cum ullam? Ratione itaque omnis eum.
+      </div>
+
+      <div id="footer" class="items">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        repellendus explicabo ducimus odio placeat tempora labore cum quia, illo
+        officia, nobis quos officiis?
+      </div>
+    </div>
+  </body>
+</html>

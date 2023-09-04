@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAvascript events</title>
+
+    <style>
+        #btn{
+            background-color: orange;
+            border: 2px solid black;
+            padding: 13px;
+            margin: 13px;
+        }
+        #btn:hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>THIS IS HEADING</h1>
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla hic temporibus, dolor soluta omnis rem neque ex minima doloremque maxime facere vitae excepturi incidunt placeat, obcaecati modi provident enim? Rerum nobis est numquam necessitatibus!</p>
+        <button id="btn" onclick="hide()">show</button>
+    </div>
+
+    <script>
+function hide(){
+    let btn = document.getElementById('btn');
+    let para = document.getElementById('para');
+    para.style.display='none'
+}
+if(para.style.display !='none'){
+    para.style.display='none';
+}
+else{
+    para.style.display='block';
+}
+    </script>
+</body>
+</html>

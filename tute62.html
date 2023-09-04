@@ -1,0 +1,43 @@
+<!-- JavaScript Tutorial: Working with JSON in JavaScript | -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON</title>
+  </head>
+  <body>
+    <div class="container">This is a JSON i.e javascript onject notation</div>
+
+    <script>
+      // making A JAVASCRIPT OBJECT
+
+      let jsonObj = {
+        name: "Dipak",
+        clg: "Modern clg Pune",
+        qualification: "MSc Statistics",
+      };
+
+      console.log(jsonObj);
+
+      // converting the above object into a string
+
+      let myobj = JSON.stringify(jsonObj);
+      console.log(myobj);
+      console.log(typeof myobj);
+
+      // now you we can apply the string methods to the stringfied object
+      // e.g
+      myobj.repeat('Dipak','Gaurav')
+
+      // reconverting the above stringfied object to javascript object
+
+      let newObj = JSON.parse(myobj);
+      console.log(newObj);
+      console.log(typeof newObj);
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quearies</title>
+
+    <style>
+        .box{
+            background-color: pink;
+            font-size: 20px;
+            align-items: center;
+            display: none;
+        }
+@media(max-width:300px){
+    #items1{
+        background-color: orange;
+        font-size: medium;
+        display: block;
+    }
+}
+    @media (min-width: 300px) and (max-width: 600px){
+        #items2{
+            display: block;
+            background-color: green;
+            font-size: 30px;
+
+        }
+    }
+    @media (min-width: 600px) and (max-width: 900px){
+        #items3{
+            display: block;
+            background-color: rgb(24, 29, 139);
+            font-size: 40px;
+
+        }
+    }
+    @media (min-width: 900px) {
+        #items4{
+            display: block;
+            background-color: rgb(181, 21, 109);
+            font-size: 45px;
+
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <h2>These are media quearies</h2>
+    <div class="box" id="items1">this is a mobile screen</div>
+    <div class="box" id="items2">this is a tablet sereen</div>
+    <div class="box" id="items3">this is a laptop screen</div>
+    <div class="box" id="items4">this is a destop screen</div>
+</body>
+</html>

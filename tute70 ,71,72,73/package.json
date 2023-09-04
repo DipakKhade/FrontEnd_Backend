@@ -1,0 +1,15 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "This is a express made by Dipak",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dipak",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "tute69",
+  "version": "1.0.0",
+  "description": "This package is made by Dipak",
+  "main": "tute69.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dipak",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "slugify": "^1.6.6"
+  }
+}
